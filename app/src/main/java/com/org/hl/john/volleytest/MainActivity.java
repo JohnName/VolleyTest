@@ -3,6 +3,7 @@ package com.org.hl.john.volleytest;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.android.volley.Cache;
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         stringRequest.setTag(TAG);
         queue.add(stringRequest);
         queue.add(obtainWeather());
+        Log.i("joker","1");
     }
 
     @Override
